@@ -1576,7 +1576,7 @@ INSERT INTO `mod_learnspells` (`type_id`, `spell_id`, `team_id`, `race_id`, `cla
 (0, 8936, -1, -1, 11, 12, -1, 0, 'Regrowth (Rank 1)'),
 (0, 50769, -1, -1, 11, 12, -1, 0, 'Revive (Rank 1)'),
 (0, 782, -1, -1, 11, 14, 467, 0, 'Thorns (Rank 2)'),
-(0, 8946, -1, -1, -1, 14, -1, 1, 'Cure Poison'),
+(0, 8946, -1, -1, 11, 14, -1, 1, 'Cure Poison'),
 (0, 5178, -1, -1, 11, 14, 5177, 0, 'Wrath (Rank 3)'),
 (0, 5187, -1, -1, 11, 14, 5186, 0, 'Healing Touch (Rank 3)'),
 (0, 5211, -1, -1, 11, 14, -1, 0, 'Bash (Rank 1)'),
