@@ -8,7 +8,8 @@ enum SpellType
     TYPE_CLASS                  = 0,
     TYPE_TALENTS                = 1,
     TYPE_PROFICIENCIES          = 2,
-    TYPE_MOUNTS                 = 3
+    TYPE_MOUNTS                 = 3,
+    TYPE_MAX                    = 4
 };
 
 enum SpellColumn
@@ -20,6 +21,17 @@ enum SpellColumn
     SPELL_REQUIRED_LEVEL        = 4,
     SPELL_REQUIRED_SPELL_ID     = 5,
     SPELL_REQUIRES_QUEST        = 6
+};
+
+struct SpellList
+{
+    uint32 spellId;
+    int8 teamId;
+    int8 raceId;
+    int8 classId;
+    uint32 requiredLevel;
+    int32 requiredSpellId;
+    uint8 requiresQuest;
 };
 
 enum Riding
@@ -43,6 +55,7 @@ public:
 
     // WorldScript
     void OnAfterConfigLoad(bool /*reload*/) override;
+    void OnLoadCustomDatabaseTable() override;
 
 private:
     bool EnableGamemasters;
@@ -63,7 +76,7 @@ private:
     void LearnMounts(Player* /*player*/);
     void AddTotems(Player* /*player*/);
 
-    std::vector<std::vector<int>> GetSpells(int /*type*/);
+    std::array<std::vector<SpellList>, TYPE_MAX> SpellsList;
 };
 
 #endif
