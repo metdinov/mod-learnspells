@@ -16,16 +16,16 @@ LearnSpells.Proficiencies = 1
 LearnSpells.SpellsFromQuests = 1
 
 # Learn apprentice (75%) riding and mount spells
-LearnSpells.Riding.Apprentice = 0
+LearnSpells.Riding.Apprentice = 1
 
 # Learn journeyman (150%) riding and mount spells
-LearnSpells.Riding.Journeyman = 0
+LearnSpells.Riding.Journeyman = 1
 
 # Learn expert (225%) riding and mount spells
-LearnSpells.Riding.Expert = 0
+LearnSpells.Riding.Expert = 1
 
 # Learn artisan (300%) riding and mount spells
-LearnSpells.Riding.Artisan = 0
+LearnSpells.Riding.Artisan = 1
 
 # Learn cold weather flying at level 77
-LearnSpells.Riding.ColdWeatherFlying = 0
+LearnSpells.Riding.ColdWeatherFlying = 1
